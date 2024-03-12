@@ -1,0 +1,48 @@
+/* fonts & colors & variables for page */
+* { /* Calculating the size of boxes, resetting margin to 0 */
+    box-sizing: border-box;
+    margin: 0 auto;
+}
+
+/* Font Families */
+@font-face {
+    font-family: 'lora';
+    src: url("../font/lora/Lora-VariableFont_wght.ttf") format("truetype");
+    font-weight: 400 700;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'lora';
+    src: url("../font/Lora-Italic-VariableFont_wght.ttf") format("truetype");
+    font-weight: 400 700;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'quicksand';
+    src: url("../font/Quicksand-VariableFont_wght.ttf") format("truetype");
+    font-weight: 300 700;
+    font-style: normal;
+}
+
+html {
+    /* Colors */
+    --night-background: #15244E; /* Color: Dark Blue */
+    --night-header-color: #ECBB29; /* Color: Gold-ish */
+    --night-p-color: #FFDC2A; /* Color: Yellow */
+    --night-accent-color: #A88B35; /* Color: Dirty Gold */
+
+    --day-background: #19CCA9; /* Color: Light Blue-ish Green */
+    --day-header-color: #ECBB29; /* Color: Dark Green */
+    --day-p-color: #02392F; /* Color: Very Dark Green */
+    /* Same as <p> color */
+    --day-accent-color: #012821; /* Color: Very Dark Green */
+ 
+    /* Fonts */
+    --font-lora: "lora";
+    --font-quicksand:"quicksand";
+
+    /* Miscellaneous */
+    --rhythm: 2rem;
+    font-size: 100%;
+}
+/* ^End of section^ */
