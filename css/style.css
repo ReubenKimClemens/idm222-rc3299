@@ -64,32 +64,33 @@ p {
 
 .top-bar {
     background-color: var(--night-header-color);
+    text-decoration: none;
     padding: 0 1rem 1rem 1rem; /* top right bottom left */
 }
-.top-bar > h1 {
+.top-bar a h1 {
     color: var(--night-background);
+    font: bold 7vw var(--font-quicksand);
+    text-align: left;
+    text-decoration: none;
+}
+.top-bar a {
+    text-decoration: none;
 }
 .top-bar .links {
     display: none;
 }
-.top-bar a:first-child {
-    text-decoration: none;
-    font: bold 4rem var(--font-quicksand);
-    text-align: left;
-}
 .links a {
-    color: white;
+    color: var(--day-header-color);
+    font: bold 1rem var(--night-background);
     margin: 0 0 .5rem 0;
-    text-decoration: none;
-    font-size: 1.5rem;
     display: block;
   }
   
 .top-bar img.icon {
     display: block;
     position: absolute;
-    right: .75rem;
-    top: 2rem;
+    right: 1vw;
+    top: 1vh;
     width: 5vw;
 }
 header > h1 {
