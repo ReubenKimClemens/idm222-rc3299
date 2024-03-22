@@ -166,16 +166,17 @@ h2 {
 }
 .project video, .project img {
     width: 100vw;
+    grid-area: image;
 }
 
 .project img + h2, video + h2 {
-    color: #C7A84C;
     margin: 0;
     text-align: center;
+    grid-area: title;
 }
 .project p {
     margin: 0 2rem 8rem 2rem;
-    color: #FFDC2A;
+    grid-area: content;
 }
 @media (width >= 720px) {
     .project p {
@@ -187,20 +188,23 @@ h2 {
     .project {
         display: grid;
         grid-template-columns: 50% 50%;
-        grid-template-rows: auto;
+        grid-template-rows: 100%;
+        grid-template-areas:
+        'title title'
+        'image content';
+        resize: both;
+        overflow: auto;
+        margin: 0 0 10rem 0 ;
     }
     .project img, .project video {
-        width: 50vw;
-        margin: 0 0 0 1rem;
+        width: 100%;
+    }
+    .project p {
+        margin: 0 2rem 0 .5rem;
     }
 
 }
 
-@media (width >= 1280px) {
-    .contact p:first-child {
-        margin: 0 12rem 1rem 12rem;
-    }
-}
 /* ^End of section^ */
 
 /* Contact Page styles */
@@ -276,10 +280,12 @@ main img {
 @media (width >= 620px) {
     main img {
         width: 70vw;
+        grid-area: image;
     }
     
     .about img + p {
         margin: 0 4.5rem 3rem 4.5rem;
+        grid-area: text;
     }
     
     .about h1 {
@@ -290,6 +296,7 @@ main img {
     }
     
     .about h2 {
+        grid-area: title;
         margin: 0 0 .25rem 3rem;
     }
     
@@ -299,14 +306,37 @@ main img {
 }
 
 @media (width >= 1024px) {
-    .contact p:first-child {
-        margin: 0 6rem 1rem 6rem;
+    .about img {
+        width: 100%;
+    }
+    .about figure {
+        display: grid;
+        grid-template-columns: 40% 60%;
+        grid-template-rows: 100%;
+        margin: 0 2rem 5rem 4rem ;
+        grid-template-areas:
+        'image text';
+    }
+    .about figure > p {
+        margin: 0 2rem 0 1rem;
+    }
+    .time-1, .time-2 {
+        display: grid;
+        grid-template-columns: 60% 40%;
+        grid-template-rows: 100%;
+        margin: 0 2rem 5rem 2rem ;
+    }
+    .time-1 {
+        grid-template-areas:
+        'title title'
+        'text image';
+    }
+    .time-2 {
+        grid-template-columns: 40% 60%;
+        grid-template-areas:
+        'title title'
+        'image text';
     }
 }
 
-@media (width >= 1280px) {
-    .contact p:first-child {
-        margin: 0 12rem 1rem 12rem;
-    }
-}
 /* ^End of section^ */
