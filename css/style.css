@@ -79,7 +79,7 @@ p {
 .top-bar .links {
     display: none;
 }
-.links a {
+.links h1 + a {
     color: var(--day-header-color);
     font: bold 1rem var(--night-background);
     margin: 0 0 .5rem 0;
