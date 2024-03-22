@@ -1,0 +1,155 @@
+/* fonts & colors & variables for page */
+* { /* Calculating the size of boxes, resetting margin to 0 */
+    box-sizing: border-box;
+    margin: 0 auto;
+}
+
+/* Font Families */
+@font-face {
+    font-family: 'lora';
+    src: url("../font/Lora-VariableFont_wght.ttf") format("truetype");
+    font-weight: 400 700;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'lora';
+    src: url("../font/Lora-Italic-VariableFont_wght.ttf") format("truetype");
+    font-weight: 400 700;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'quicksand';
+    src: url("../font/Quicksand-VariableFont_wght.ttf") format("truetype");
+    font-weight: 300 700;
+    font-style: normal;
+}
+
+html {
+    /* Colors */
+    --night-background: #15244E; /* Color: Dark Blue */
+    --night-header-color: #ECBB29; /* Color: Gold-ish */
+    --night-p-color: #FFDC2A; /* Color: Yellow */
+    --night-accent-color: #A88B35; /* Color: Dirty Gold */
+    --night-select-color: #C7A84C;
+
+    --day-background: #19CCA9; /* Color: Light Blue-ish Green */
+    --day-header-color: #02392F; /* Color: Dark Green */
+    --day-p-color: #012821; /* Color: Very Dark Green */
+    /* Same as Header color */
+    --day-accent-color: #02392F; /* Color: Dark Green */
+    --day-bar-color: #0CB090; /* Color: Mint Green*/
+ 
+    /* Fonts */
+    --font-lora: "lora";
+    --font-quicksand:"quicksand";
+
+    /* Miscellaneous */
+    --rhythm: 2rem;
+    font-size: 100%;
+}
+/* ^End of section^ */
+
+/* All pages */
+body {
+    background-color: var(--night-background);
+    color: var(--night-header-color);
+}
+h2 {
+    font: bold 1.5rem var(--font-quicksand);
+}
+p {
+    color: var(--night-p-color);
+    font: normal 1.25rem var(--font-lora);
+}
+
+.top-bar {
+    background-color: var(--night-header-color);
+    padding: 0 1rem 1rem 1rem; /* top right bottom left */
+}
+.top-bar a h1 {
+    color: var(--night-background);
+    font: bold 7vw var(--font-quicksand);
+    text-align: left;
+}
+.top-bar a {
+    text-decoration: none;
+}
+.top-bar .links {
+    display: none;
+}
+.links a {
+    color: var(--day-header-color);
+    font: bold 2rem var(--font-lora);
+    margin: 0 0 .5rem 0;
+    display: block;
+  }
+  
+.top-bar img.icon {
+    display: block;
+    position: absolute;
+    right: 1vw;
+    top: 1vh;
+    width: 5vw;
+}
+header > h1 {
+    font: bold 2rem var(--font-quicksand);
+    margin: 0 0 .5rem;
+    text-align: center;
+}
+
+@media (width >= 600px) {
+    header > h1 {
+        font-size: 3rem;
+    }
+    
+    p {
+        font-size: 1.35rem;
+    }
+    
+    h2 {
+        font-size: 2rem;
+    }
+}
+
+@media (width >= 720px) {
+    header > h1 {
+        font-size: 3.5rem;
+    }
+    
+    p {
+        font-size: 1.5rem;
+    }
+    
+    h2 {
+        font-size: 2.5rem;
+    }
+}
+
+@media (width >= 1024px) {
+    header > h1 {
+        font-size: 3.5rem;
+    }
+    
+    p {
+        font-size: 1.75rem;
+    }
+    
+    h2 {
+        font-size: 2.25rem;
+    }
+}
+
+@media (width >= 1280px) {
+    header > h1 {
+        font-size: 4.5rem;
+    }
+    
+    p {
+        font-size: 1.5rem;
+    }
+    
+    h2 {
+        font-size: 2.75rem;
+    }
+}
+/* ^End of section^ */

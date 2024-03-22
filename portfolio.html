@@ -4,6 +4,7 @@
         <meta charset="UTF-8">
 <!--    <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
         <title>Reuben Clemen's Portfolio</title>
+        <link rel="stylesheet" href="css/main.css" type="text/css">
         <link rel="stylesheet" href="css/style.css" type="text/css">
     </head>
     <body>
@@ -15,7 +16,7 @@
                     <a href="about.html">About Me</a>
                     <a href="contact.html">Contact</a>
                 </nav>
-                <img src="images/hamburger.svg" width="50" height="50" height="auto" alt="" class="icon" onclick="hamburgerMenu()">
+                <img src="images/hamburger.svg" alt="" class="icon" onclick="hamburgerMenu()">
             </div>
             <h1>Portfolio</h1>
         </header>
@@ -36,8 +37,8 @@
         </div>
 
         <div class="project">
-            <img srcset="images/redesign-tablet.jpg 720w,
-                images/redesign-mobile.jpg 400w"
+            <img srcset="images/redesign-tablet.jpg 2x,
+                images/redesign-mobile.jpg 1x"
                 src="images/redesign-mobile.jpg" alt="redesign-of-website">
 
             <h2>Redesign in IDM212</h2>
@@ -50,10 +51,9 @@
         </div>
 
         <div class="project">
-            <img srcset="images/lion-tablet.jpg 720w,
-                images/uxid-mobile.jpg 400w"
+            <img srcset="images/lion-tablet.jpg 2x,
+                images/uxid-mobile.jpg 1x"
                 src="images/lion-mobile.jpg" alt="lion">
-            <img src="images/lion-mobile.jpg" alt="lion">
             <h2>Photography</h2>
             <p>
                 This is a picture I took of a lion when I went on a trip. I
@@ -62,6 +62,6 @@
                 about positive and negative space, scale, and geometric concepts.
             </p>
         </div>
+        <script src="script/script.js"></script>
     </body>
-    <script src="script/script.js"></script>
 </html>

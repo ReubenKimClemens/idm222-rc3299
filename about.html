@@ -4,6 +4,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Reuben Clemen's About</title>
+        <link rel="stylesheet" href="css/main.css" type="text/css">
         <link rel="stylesheet" href="css/style.css" type="text/css">
     </head>
     <body>
@@ -15,17 +16,15 @@
                     <a href="about.html">About Me</a>
                     <a href="contact.html">Contact</a>
                 </nav>
-                <img src="images/hamburger.svg" width="50" height="50" height="auto" alt="" class="icon" onclick="hamburgerMenu()">
+                <img src="images/hamburger.svg" alt="" class="icon" onclick="hamburgerMenu()">
             </div>
             <h1>About Me</h1>
         </header>
 
-        
-        
         <main class="about">
             <figure>
-                <img srcset="images/me-tablet.jpg 720w,
-                images/me-mobile.jpg 400w"
+                <img srcset="images/me-mobile.jpg 1x,
+                images/me-tablet.jpg 2x"
                 src="images/me-mobile.jpg" alt="picture-of-me">
                 <p>
                     My name is Reuben Clemens and I am a Sophomore in the 
@@ -46,8 +45,8 @@
                 <div></div>
             </div>
             <div class="time-1">
-                <img srcset="images/fye-tablet.jpg 720w,
-                images/fye-mobile.jpg 400w"
+                <img srcset="images/fye-tablet.jpg 2x,
+                images/fye-mobile.jpg 1x"
                 src="images/fye-mobile.jpg" alt="first-year-exploratory">
                 <h2>2022 - Start of College</h2>
                 <p>
@@ -60,8 +59,8 @@
             </div>
             
             <div class="time-2">
-                <img srcset="images/uxid-tablet.jpg 720w,
-                images/uxid-mobile.jpg 400w"
+                <img srcset="images/uxid-tablet.jpg 2x,
+                images/uxid-mobile.jpg 1x"
                 src="images/uxid-mobile.jpg" alt="uxid">
                 <h2>2023 - Declaring UXID Major</h2>
                 <p>
@@ -72,6 +71,6 @@
             </div>
             
         </main>
+        <script src="script/script.js"></script>
     </body>
-    <script src="script/script.js"></script>
 </html>
