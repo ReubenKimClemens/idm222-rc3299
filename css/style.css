@@ -50,18 +50,40 @@ html {
 /* ^End of section^ */
 
 /* All pages */
+body {
+    background-color: var(--night-background);
+}
+
+h1, h2  {
+    color: var(--night-header-color);
+}
+
+p {
+    color: var(--night-p-color);
+}
+
 .top-bar {
-    background-color: #19CCA9;
-    padding: .2rem 1rem 1rem 1rem; /* top right bottom left */
+    background-color: var(--night-header-color);
+    padding: 1rem 1rem 2rem 1rem; /* top right bottom left */
     font: bold 1.25rem var(--font-quicksand);
-    text-align: center;
+    text-align: left;
+}
+.top-bar > h1 {
+    color: var(--night-background);
 }
 
 header > h1 {
     font: bold 2rem var(--font-quicksand);
-    margin: 0 0 2rem;
+    margin: 0 0 .5rem;
     text-align: center;
-    color: green;
+}
+
+p {
+    font: normal 1.25rem var(--font-lora);
+}
+
+h2 {
+    font: bold 1.5rem var(--font-quicksand);
 }
 /* ^End of section^ */
 
@@ -69,25 +91,76 @@ header > h1 {
 /* ^End of section^ */
 
 /* Portfolio Page styles */
-.project {
-    margin: 0 auto 1rem;
-    background-color: #15244E;
-    height: 300px;
-    width: 300px;
-    border: #ECBB29 2px solid;
+.project, .project video {
+    width: 100vw;
 }
-.project h2 {
+.project img + h2, video + h2 {
     font: bold 1.5rem var(--font-quicksand);
     color: #C7A84C;
+    margin: 0;
+    text-align: center;
 }
 .project p {
     font: normal 1rem var(--font-lora);
+    margin: 0 2rem 8rem 2rem;
     color: #FFDC2A;
 }
 /* ^End of section^ */
 
 /* Contact Page styles */
+.contact h2 {
+    margin: 0 0 0 2rem;
+}
+
+.contact h2 + p {
+    margin: 0 0 2rem 3rem;
+}
+
+.contactLine {
+    display: flex;
+}
+
+.contact p:first-child {
+    margin: 0 2rem 1rem 2rem;
+    text-align: center;
+}
+
 /* ^End of section^ */
 
 /* About Page styles */
+main img {
+    width: 95vw;
+    display: block;
+    margin: 0 auto .5rem auto;
+}
+
+.about img + p {
+    margin: 0 2.25rem 3rem 2.25rem;
+}
+
+.about h1 {
+    font: bold 2.5rem var(--font-quicksand);
+    text-align: left;
+    margin: 0 0 .5rem 1.5rem ;
+}
+
+.about h2 {
+    margin: 0 0 .25rem 2rem;
+}
+
+.about h2 + p {
+    margin: 0 2rem 5rem 2rem;
+}
+
+.timeline {
+    display: flex;
+}
+.timeline div {
+    flex-grow: 1;
+    height: 5px;
+    border-radius: 2px;
+    background-color: var(--night-accent-color);
+    margin: 1.75rem 1rem 0 .6rem;
+}
+
 /* ^End of section^ */
