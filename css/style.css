@@ -64,14 +64,34 @@ p {
 
 .top-bar {
     background-color: var(--night-header-color);
-    padding: 1rem 1rem 2rem 1rem; /* top right bottom left */
-    font: bold 1.25rem var(--font-quicksand);
-    text-align: left;
+    padding: 0 1rem 1rem 1rem; /* top right bottom left */
 }
 .top-bar > h1 {
     color: var(--night-background);
 }
-
+.top-bar .links {
+    display: none;
+}
+.top-bar a:first-child {
+    text-decoration: none;
+    font: bold 4rem var(--font-quicksand);
+    text-align: left;
+}
+.links a {
+    color: white;
+    margin: 0 0 .5rem 0;
+    text-decoration: none;
+    font-size: 1.5rem;
+    display: block;
+  }
+  
+.top-bar img.icon {
+    display: block;
+    position: absolute;
+    right: .75rem;
+    top: 2rem;
+    width: 5vw;
+}
 header > h1 {
     font: bold 2rem var(--font-quicksand);
     margin: 0 0 .5rem;
@@ -107,6 +127,7 @@ h2 {
     .top-bar {
         font-size: 1.75rem;
     }
+
     header > h1 {
         font-size: 3.5rem;
     }
